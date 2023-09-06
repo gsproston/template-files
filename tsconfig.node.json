@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    // type checking
+    "allowUnreachableCode": false,
+    "noFallthroughCasesInSwitch": false,
+    "noImplicitOverride": true,
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "strict": true,
+    // emit
+    "outDir": "./dist",
+    "sourceMap": true,
+    // module
+    "module": "ES6",
+    "moduleResolution": "node",
+    // js support
+    "allowJs": false,
+    // interop constraints
+    "esModuleInterop": true,
+    // language and environment
+    "target": "ES6"
+  },
+  "ts-node": {
+    // Tell ts-node CLI to install the --loader automatically
+    "esm": true
+  },
+  "include": ["src/**/*.ts", ".eslintrc.cjs"],
+  "exclude": ["node_modules"]
+}
