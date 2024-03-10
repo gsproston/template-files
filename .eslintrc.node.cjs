@@ -2,12 +2,13 @@
 module.exports = {
   extends: [
     'eslint:recommended', 
+    'plugin:jsdoc/recommended-typescript',
     'plugin:@typescript-eslint/recommended-type-checked',
     'plugin:@typescript-eslint/stylistic-type-checked',
     'plugin:@typescript-eslint/strict-type-checked',
     'prettier',
   ],
-  plugins: ['@typescript-eslint'],
+  plugins: ['@typescript-eslint', 'jsdoc'],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     project: true,
